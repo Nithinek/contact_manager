@@ -1,0 +1,108 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "alan",
+      "email": "alan@gmail.com",
+      "phone": "8563789651",
+      "photo": "https://i.pinimg.com/564x/42/e3/84/42e3846d4e0b27ce0dcc1d5e35521303.jpg",
+      "company": "abc company",
+      "title": "Hr",
+      "groupId": "1"
+    },
+    {
+      "id": "2",
+      "name": "saranya",
+      "email": "saranya@gmail.com",
+      "phone": "7556378965",
+      "photo": "https://th.bing.com/th/id/OIP.MGXWfVh6IdzfUHuZi_TrvgHaHa?pid=ImgDet&rs=1",
+      "company": "xyz company",
+      "title": "Tester",
+      "groupId": "2"
+    },
+    {
+      "id": "3",
+      "name": "saran vs",
+      "email": "saran12@gmail.com",
+      "phone": "7012123489",
+      "photo": "https://excellindia.com/wp-content/uploads/2021/03/male-avtar.png",
+      "company": "abc company",
+      "title": "Analyst",
+      "groupId": "3"
+    },
+    {
+      "id": "4",
+      "name": "Kavitha",
+      "email": "kavis@gmail.com",
+      "phone": "8963779651",
+      "photo": "https://www.shareicon.net/data/2016/09/15/829471_user_512x512.png",
+      "company": "None",
+      "title": "None",
+      "groupId": "2"
+    },
+    {
+      "id": "5",
+      "name": "Amal sabu",
+      "email": "amal@gmail.com",
+      "phone": "9963789651",
+      "photo": "https://th.bing.com/th/id/OIP.Ge6T0yMXN2h-ps_lEgJWgwAAAA?pid=ImgDet&w=460&h=460&rs=1",
+      "company": "none",
+      "title": "none",
+      "groupId": "1"
+    },
+    {
+      "id": "6",
+      "name": "biju",
+      "photo": "https://th.bing.com/th/id/OIP.iJ8GDoxdjs8WQWFfSd4cLwHaHa?pid=ImgDet&rs=1",
+      "email": "biju@gmail.com",
+      "phone": "8943096452",
+      "company": "abc company",
+      "title": "hd",
+      "groupId": "2"
+    },
+    {
+      "id": "10",
+      "name": "kichu",
+      "photo": "https://icons.iconarchive.com/icons/artua/dragon-soft/512/User-icon.png",
+      "email": "kichu@gmail.com",
+      "groupId": "2",
+      "phone": "9656244796",
+      "company": "kitex grp",
+      "title": "tester"
+    },
+    {
+      "id": "11",
+      "name": "nayana",
+      "photo": "https://cdn.imgbin.com/2/18/7/imgbin-avatar-icon-3d-character-icon-material-woman-wearing-blue-suit-cector-HJBJAK3EFdaXKzZQ6SuTXDUJb.jpg",
+      "email": "nyana@gmail.com",
+      "phone": "8565258578",
+      "company": "rr company",
+      "title": "hr",
+      "groupId": "3"
+    },
+    {
+      "id": "25",
+      "name": "lince",
+      "photo": "https://cdn1.iconfinder.com/data/icons/avatars-round-flat/33/an-04-512.png",
+      "email": "lince@gmail.com",
+      "phone": "9656894307",
+      "company": "geonet",
+      "title": "manager",
+      "groupId": "2"
+    }
+  ],
+  "group": [
+    {
+      "id": "1",
+      "name": "family"
+    },
+    {
+      "id": "2",
+      "name": "company"
+    },
+    {
+      "id": "3",
+      "name": "friends"
+    }
+  ]
+}

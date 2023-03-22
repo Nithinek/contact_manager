@@ -1,0 +1,78 @@
+<!---system date and time-->
+<p>login Details: {{loginDate | date:'short'}}</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <!---heading-->
+<h1 class="text-warning text-center m-4">contact management system</h1>
+<!--content-->
+<p style="text-align: justify;">Contact management is the process of recording contacts’ details and tracking their interactions with a business. Such systems have gradually evolved into an aspect of customer relationship management (CRM) systems, which allow businesses to improve sales and service levels leveraging a wider range of data.Contact management systems house customer information in a searchable database so it’s easy to access details. Using automation to gather and store contact details is also much more reliable than manual methods.
+
+    Sales and support teams rely on contact management to access information about customers—from their contact details to their pain points—in order to better understand and serve them. Support agents can identify the customer and solve their problems in less time, while sales agents can easily send personalized messages to customers and anticipate their needs.
+    
+    Marketing teams aren’t left out, either. Marketers use details—such as age, job roles, industries, location, and interests—to plan their marketing strategy and attract more customers.
+    
+    Although contact management solves many problems for businesses, its powers are finite. Contact management systems, for example, do not offer advanced functions (like reporting and pipeline management). This is where customer relationship management (CRM) software comes in.
+    
+    What’s the difference between contact management</p>
+    <!---add rounter button link-->
+<a routerLink="/contact/add" class="btn btn-warning p-2" style="float:right"> <i class="fa-sharp fa-solid fa-plus"></i> Add Contact</a>
+
+
+    <!-----search bar && button-->
+    <div class="row">
+        <div class="col-6">
+            <input (change)="search($event)" type="text" class="form-control" placeholder="Search Your Contacts">
+        </div>
+        <div class="col-6">
+        
+        </div>
+    </div>
+        </div>
+    </div>
+
+  
+ <!----  <pre>
+    {{allContacts | json}}
+</pre> -->
+
+<!-----card designing-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"*ngFor="let contact of allContacts | filter:searchKey:'name'">
+            <div class="card mt-5">
+                <div class="card-body bg-warning p-5 ">
+                    
+                    <div class="row">
+                        <div class="col-4">
+                            <!---property binding-->
+                            <img [src]="contact.photo" width="100px" alt="">
+                        </div>
+                        
+                    <ul class="list-group">
+                        <!--view-->
+                        <li class="list-group-item">Name:{{contact.name}}
+                        <button routerLink="/contact/view/{{contact.id}}" class="btn text-primary" style="float:right"> <i class="fa-sharp fa-solid fa-eye"></i></button>
+                    </li>
+                    <!--edit-->
+                        <li class="list-group-item">Email:{{contact.email}}
+                            <button routerLink="/contact/update/{{contact.id}}" class="btn text-success" style="float:right"><i class="fa-solid fa-user-pen"></i></button>
+
+                        </li>
+                        <!--delete-->
+                        <li class="list-group-item"> Mobile no:{{contact.phone}}
+                            <button (click)="deleteContact(contact.id)" class="btn text-danger" style="float:right"><i class="fa-solid fa-user-xmark"></i></button>
+
+                        </li>
+                        
+                      </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

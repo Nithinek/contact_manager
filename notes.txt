@@ -1,0 +1,136 @@
+                            Contact Management System
+-----------------------------------------------------------------------------------------
+
+             Basic commands
+
+             1. Create a new project- ng new contact_app
+             2. To run a project - ng serve --open
+             3. Create a new component - ng g c component_name
+             
+ ----------------------------------------------------------------------------------------
+             Basic Bulding Blocks
+
+             1. Module- Used to add 3rd party libraries
+             2. Component- To create html pages(html,css,ts)
+             3. Selector- Used to replace the html corresponding to the component
+            4. services- reusable codes that can be shared between the components
+             5. Asynchorouns function rxjs
+              6.
+ -------------------------------------------------------------------------------------------
+                          Contact Management System
+     1. Create a new project - ng new contact_app
+     2. cd contact_app
+     3. code .
+     4. To Run a project - ng serve --open
+     5. Install Bootstarp, fontAwsome and google fontAwsome
+              -> npm i bootstrap 
+              -> npm i @fortAwsome/fontAwsome-free
+      6. Configure Bootstrap, fontAwsome and google fontAwsome in Angular-json        
+
+      7.Create components
+           ->contactManager - To view all contacts and Management
+           ng g c contactManager
+           ->addContact - To add a new contact_app
+           ng g c addContact
+           ->updateContact - To update a contact_app
+           ng g c updateContact
+           ->viewContact- To View particular contact_app
+           ng g c viewContact
+           -> Page not found create and design
+           ->Navigation bar -ng g c navbar and design
+           ->contactManager-Page design
+           ->viewpage design
+           ->updatepage design
+           ->addpage design
+
+
+           8. API creation
+             create our own json file
+             go to jsonplaceholder site- ceate my json server
+
+          9. create folder for backend
+              create server folder inside the project -src/server folder
+              create db.json file file in server folder
+              add our own content to the db.json file
+
+         10. in server folder create package.json and nodemodules     
+             create package.son file- npm init
+             ->create json server npm i json-server
+             ->npm starts
+
+             update package.json file script as
+       
+             "scripts": {
+    "start": "json-server --watch db.json --port 3000"
+  },
+         
+         ->npm start
+         11. create model for contact and group
+             create model folder in src folder
+             create mycontacts.ts file
+             create mygroup.ts file
+             12 To fetch data-asynchronus resolving
+              JS                         TS
+              promise                   observable
+              fetch('url)                rxjs libarary
+              .then()  -------------------- .subscribe()
+
+
+            13. API creation
+            eg: view contact
+                update contact
+
+            14.service creation
+               pass data from one data to another
+               if components  share same data then we create service
+
+             ng g s services/api
+            15. To get http methods- get,post,put,patch,delete
+                import HttpClientmodule in app.module.ts
+        
+            16. Dependency inject httpClient in API services
+
+
+        17. Data Binding (very important annu interview il)
+            Data sharing inside a component
+            
+
+            Html(view) -> ts(component)
+            ts->html
+            1. One Way Data Binding
+               a) component to view (ts->html)
+                 i) String Interpolation - {{variable_name}}
+                 ii)property Binding - [attribute]="property_name"
+                 b) view(html)-component(ts)
+                 i)Event Binding
+                 Ii)Event Binding using $event
+                 
+                 2. Two way data Binding
+                 i)ngModel
+                 -import formsModule in appModule
+                 -[(ngModel)]="property_name"
+
+
+                 18. Directives - To manipulate DOM
+                     1.Component directives()
+                     2.Structural directives - To add or remove html elements based on conditions
+                       i)*ngIf="conditions"
+                       ii)*ngFor="let var_name of array_name"
+
+                       19.Activated Route //class- viewContact - to pass id to url
+
+                       Provides access to information about a route associated with a component that is loaded in an outlet. 
+                       params Observable<params> // params- //methods
+                       n observable of the matrix parameters scoped to this route.
+
+                       20.Angular Pipes-Transforming Data Using Pipe
+                       Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions to use in template expressions to accept an input value and return a transformed value.
+
+                       eg:date
+
+                       create a pipe for searching
+
+                       ng g p pipe_folder/pipe_name
+
+                       ng g p pipes/filter
+                           

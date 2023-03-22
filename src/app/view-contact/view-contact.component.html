@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-warning text-center m-4">View your contacts </h1>
+<p>Contact management is the process of recording contacts’ details and tracking their interactions with a business. Such systems have gradually evolved into an aspect of customer relationship management (CRM) systems, which allow businesses to improve sales and service levels leveraging a wider range of data.Contact management systems house customer information in a searchable database so it’s easy to access details. Using automation to gather and store contact details is also much more reliable than manual methods.
+
+    Sales and support teams rely on contact management to access information about customers—from their contact details to their pain points—in order to better understand and serve them. Support agents can identify the customer and solve their problems in less time, while sales agents can easily send personalized messages to customers and anticipate their needs.
+    
+    Marketing teams aren’t left out, either. Marketers use details—such as age, job roles, industries, location, and interests—to plan their marketing strategy and attract more customers.
+    
+    Contact management systems, for example, do not offer advanced functions (like reporting and pipeline management). This is where customer relationship management (CRM) software comes in.
+    
+    What’s the difference between contact management</p>
+        </div>
+    </div>
+    <!----form-->
+    <div class="container">
+        <div class="row">
+            <!----form-->
+            <div class="col-6">
+                <!------
+<pre>
+    {{contactId | json}}
+</pre>
+
+<pre>
+    {{contact | json}} --complete data of contact
+</pre> 
+<pre>
+    {{groupId|json}}
+</pre>
+<pre>
+    {{groupName|json}}
+</pre>  --->
+ 
+                <ul class="list-group mt-5">
+                    <h1> Contact Details</h1>
+                    <li class="list-group-item">Name:{{contact.name}}
+
+                    </li>
+                    <li class="list-group-item">Email:{{contact.email}} 
+                         </li>
+                    <li class="list-group-item"> Mobile no: {{contact.phone}}
+                         </li>
+                    <li class="list-group-item"> Company Name: {{contact.company}} 
+                         </li>
+                    <li class="list-group-item"> Title: {{contact.title}} 
+
+                    </li>
+                    <li class="list-group-item"> Group: {{groupName}} 
+                         </li>
+                    
+                  </ul>
+                  <a routerLink="/" class="btn btn-success my-4">Exit</a>
+            </div>
+            <div class="col-6">
+                <img class="img-icon ms-4" src="{{contact.photo}}">
+            </div>
+        </div>
+    </div>
+</div>
+
+
